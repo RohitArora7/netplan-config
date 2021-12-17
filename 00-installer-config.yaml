@@ -1,16 +1,12 @@
 network:
-  ethernets:
-    enp1s0:
+ ethernets:
+  enp1s0:
+    addresses:
+     - 102.222.36.38/25
+    gateway4: 102.222.36.1
+    nameservers:
       addresses:
-      - 192.168.122.11/24
-      - 192.168.122.12/24
-      - 192.168.122.13/24
-      - 192.168.122.14/24
-      - 192.168.122.15/24
-      gateway4: 192.168.122.1
-      nameservers:
-        addresses:
-        - 8.8.8.8
-        - 8.8.4.4
-        search: []
-  version: 2
+      - 8.8.8.8
+      - 8.8.4.4
+      search: []
+ version: 2
